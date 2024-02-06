@@ -1,0 +1,996 @@
+@font-face {
+    font-family: '나눔폰트';
+    src: url)../font/NanumSquareR.woff);
+}
+@font-face {
+    font-family: '나눔폰트';
+     font-weight: 900;
+    src: url)../font/NanumSquareB.woff);
+}
+/*폰트를 부드럽게 처리하기 위해서 이런걸 쓰기도 한다 기울이기*/
+p,h3,h4,span {
+    transform: rotate(0.03deg)
+}
+/*위- 중급1*/
+
+div,input,textarea{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    font-family: '나눔폰트';
+   
+}
+/*노멀라이져 normalize  호환성 이슈*/
+
+/*3강 사자 프로필*/
+.haprofile {
+    width:120px;  
+    display:block; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+.hatitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    color: blue;
+    letter-spacing: 5px;
+}
+.content {
+    text-align: center;
+}
+/*
+p{
+    text-align: center;
+    color: :blue;
+}
+*/
+/*
+#special {
+   color: red;
+}*/
+
+.habox {
+    width: 200px;
+    height: 100px;
+    background-color: cadetblue;
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+    color: beige;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px; 
+    box-shadow:5px 5px black;
+    text-align: center;
+}
+/*6강 레이아웃*/
+.hacontainer {
+    width: 800px;
+    font-size: 0px;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: aquamarine;
+}
+
+.haleft {
+    width: 20%;
+    height: 150px;
+    background-color: cornflowerblue;
+/*    float: left;*/
+    display: inline-block;
+     vertical-align: top;
+}
+
+.haright {
+    width: 80%;
+    height: 150px;
+    background-color: chocolate;
+/*    float: left;*/
+     display: inline-block;
+    font-size: 15px;
+    
+}
+
+.hafooter {
+    width: 100%;
+    height: 50px;
+    background-color: darkgray;
+/*    clear: both;*/
+}
+/*8.레이아웃 만들기 숙제*/
+
+
+.hw_container {
+    width: 600px;
+/*    height: 200px;*/
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hw_left {
+    width: 80%;
+/*    height: 200px;*/
+    float: left;
+}
+
+.hw_right {
+    width: 20%;
+/*    height: 200px;*/
+    float: left;
+}
+
+.hw_profile {
+    width: 70px;
+    padding: 5px;
+    float: left;
+}
+
+.hw_name {
+    float: left;
+}
+/*9강 네브바*/
+
+.navbar9 li{
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}
+.navbar9 a{
+    font-size:20px;
+    text-decoration: none;
+}
+
+/*10강 배경꾸미기*/
+.ha_main_background {
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../image/shoes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    filter: brightness(70%) saturate(500%);
+    padding: 1px;
+    text-align: center;
+    position: relative;
+    padding: 5px
+}
+
+.ha_main_title {
+    font-size: 40px;
+    color: aliceblue;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.ha_text9 {
+    color: antiquewhite;
+
+}
+.ha_button9 {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 200px;
+    margin: auto;
+    width: 100px;
+/*    z-index: 6;*/
+}
+
+/*12강 회색박스*/
+.hw_box11 {
+    width: 80%;
+    max-width: 600px;
+    background-color:lightgray;
+     margin: auto;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    top:-40px;
+   
+/*    z-index: 5;*/
+    box-sizing: border-box; 
+/*    content 부분만 width로 설정하지 말고 padding, border 포함하라고 시키는 명령어*/
+}
+
+
+/*13강 인풋, 폼
+input {
+    padding: 5px;
+    font-size: 25px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+input[type=time] {
+    padding: 10px;
+    font-size: 20px;
+    border: 3px solid blue;
+    border-radius: 5px;
+}input중 type=time 인것만
+*/
+.text-input {
+      padding: 10px;
+    font-size: 20px;
+    border: 3px solid blue;
+    border-radius: 5px;
+}
+
+/*14강 form & input 숙제 : Contact Us 섹션 만들기*/
+
+
+.hw_container13 {
+    background-color: currentColor;
+    padding: 20px
+}
+
+.hw_box13 {
+    background-color:white;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.hw_input {
+    padding: 5px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 5px;
+/*    box-sizing: border-box; */
+}
+
+.hw-50 {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.hw-c13 {
+        clear: both;
+}
+
+.hw-100 {
+    padding: 10px;
+}
+
+.hw_long {
+    height:100px;
+}
+
+.hw_ybutton {
+    background-color: burlywood;
+    font-size: 15px;
+    padding: 10px 20px;
+border: none;
+    border-radius: 5px;
+    color: white;
+    /*    float: right;*/
+    display: block;
+    margin-left: auto;
+}
+
+
+/*16강 표숙제*/
+
+.hw_t_container {
+    width: 500px;
+    background-color: cornflowerblue;
+    padding: 10px;
+}
+
+.hw_t_box {
+    width: 90%;
+    background-color: azure;
+    padding: 10px;
+    margin: auto
+}
+
+.hw_t_btn {
+    padding: 10px;
+    background-color: darkolivegreen;
+    border-radius: 5px;
+    color: aliceblue;
+    display: block;
+    margin-left: auto;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.hw_t_btn:hover{
+    background-color: chocolate;
+}
+.hw_t_btn:focus{
+    background-color: yellow;
+}
+.hw_t_btn:active{
+    background-color: blueviolet;
+}
+
+.tc_cart-background {
+    width: 100%;
+    background-color: #c2d3de;
+    padding: 30px;
+}
+
+.tc_cart-tale {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+/*
+td,th {
+    border: 1px solid black;
+    vertical-align: middle
+}
+*/
+.tc_cart-tale td, .tc_cart-tale th{
+    padding: 15px;
+    border-bottom: 1px solid #c2d3de;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.tc_cart-tale th:nth-child(2) {
+    width: 400px
+}
+
+.hw_t-bottom {
+    padding: 10px;
+}
+
+.custom-link {
+    text-decoration: none;
+    
+}
+.custom-link:link {
+    color: red;
+}
+.custom-link:visited {
+    color: chartreuse;
+}
+
+.ag1 {
+    width:100%;
+    height: 100px;
+    background-color: antiquewhite    
+}
+
+.ag {
+        width: 800px;
+}
+
+.ag2 {
+    width: 20%;
+    height: 200px;
+    background-color: aqua;
+    float: left;    
+}
+
+
+
+.ag3 {
+    width: 80%;
+    height: 200px;
+    background-color: blueviolet;
+    float: left;
+}
+
+.ag4 {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    clear: both;
+}
+
+/*나혼자 연습*/
+
+/*사자프로필*/
+.me_profile {
+    width: 17%;
+    display: block;
+    margin: auto;
+}
+
+.me_title {
+    color: aquamarine;
+    text-align: center;
+    margin: 0;
+}
+
+
+.me_box {
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+    border: 2px solid red;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 2px 5px yellow;
+    text-align: center;
+    padding: 5px;        
+}
+/*사진소개*/
+.me_container {
+    width: 600px;
+    height: 200px;
+/*    background-color: bisque*/
+    margin: auto
+}
+
+.me_left {
+    width: 80%;
+    padding: 10px;
+/*    background-color: blueviolet;*/
+    float: left;
+}
+
+.me_right {
+    width: 20%;
+    float: left;
+}
+
+.me_p_img {
+    width: 13%;
+    float: left;
+}
+
+.me_name {
+    float: left;
+}
+
+.me_content {
+    padding: 5px;
+}
+
+.me_naabar li{
+    width: 100px;
+    background-color: aquamarine;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.me_naabar a{
+    text-decoration: none;
+}
+/*신발가게*/
+.me_backgroundimg {
+    width: 100%;
+    height: 500px;
+    background-image: url(../image/shoes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 1px;
+}
+
+.me_s_title {
+    margin-top: 50px;
+    color: antiquewhite
+}
+
+.me_s_text {
+    margin: 0px 20px 0px 20px;
+    color: beige;
+}
+
+.me_button {
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: aqua;
+    position: relative;
+    left: 200px;
+}
+
+.me_s_box {
+    width: 80%;
+    max-width: 900px;
+    background-color: aquamarine;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: auto;
+    position: relative;
+    top:-40px;
+    
+}
+
+.me_blackback {
+    width: 100%;
+    padding: 20px;
+    background-color: blueviolet
+}
+
+.me_whiteback {
+    width: 80%;
+    padding: 20px;
+    background-color: aliceblue;
+    margin: auto;
+}
+
+.me_input {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.me_namel {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.me_name1 {
+    padding: 10px;
+}
+
+.me_btn {
+    padding: 10px;
+    background-color: brown;
+    color: aliceblue;
+    border-radius: 10px;
+    float: right;
+;
+}
+
+.me_blueback {
+    background-color: darkcyan;
+    padding: 20px;
+    width: 100%
+    }
+
+.me_tableback {
+    background-color: antiquewhite;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+}
+.me_tableback td, .me_tableback th{
+    border-bottom: 1px solid black;
+     padding: 15px;
+    text-align: center;
+}
+/*중급 2강*/
+.flex-item {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    margin: 5px;
+}
+
+.flex-container {
+    display: flex;
+/*    justify-content: center; 가운데 정렬*/
+/*    flex-direction: column;     세로 배치, 가로는 row*/
+/*    flex-wrap: wrap;     크기가흘러넘칠때 알아서 세로로*/
+/*    align-items:center; 상하정렬*/
+/*    height: 500px;*/
+ }
+.nav-top {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    background-color: brown;
+    padding: 10px;
+   }
+.nav-item {
+    margin-right: 20px;
+    color: aliceblue
+}
+
+/*
+@media screen and (max-width : 1200px) { 
+  .haha { 
+    font-size : 10px; 
+  } 
+} 
+@media screen and (max-width : 768px) { 
+  .haha { 
+    font-size : 10px; 
+  } 
+} 
+@media screen and (max-width : 576px) { 
+  .haha { 
+    font-size : 10px; 
+  } 
+} 
+*/
+/*
+1200px이하에서는 .haha클레스를 사용한곳에서 
+ font-size : 10px;로 변경해주세요 라는 뜻
+*/
+
+.hw_byh {
+/*
+ width: 80%;
+ max-width: 1000px;
+*/
+/*    margin: auto;*/
+}
+.hw_byh::after{
+    content: '';
+    display: block;
+    clear: both;
+    float: none;
+}
+.hw_byh::after {
+    content: '';
+    display: block;
+    clear: both;
+    float: none;
+}
+
+.hw_byh div {
+   float: left;
+    width: 25%;
+    text-align: center;
+}
+
+@media screen and (max-width : 1200px) { 
+  .hw_byh div  { 
+    width: 50%;
+  } 
+} 
+@media screen and (max-width : 768px) { 
+ .hw_byh div  { 
+    width: 100%;
+  } 
+} 
+/*
+@media screen and (max-width : 576px) { 
+  .haha { 
+    font-size : 10px; 
+  } 
+} */
+
+.hw_byh i {
+background-color: burlywood;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    padding-top: 25px;
+    box-sizing: border-box;
+    color: white;
+    margin-top: 40px;
+}
+.hw_page_item i {
+    background-color: bisque;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+/*중9강 구두*/
+.shop-bg {
+    background-color: #eee;
+    padding: 20px
+}
+
+.shop-container {
+    display: flex;
+    width: 90%;
+    margin: auto
+}
+
+.shop-item {
+    width: 33%;
+    padding: 15px;
+}
+.shop-item img {
+    width: 100%;
+    display: block;
+}
+
+.me_overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+
+.bbbox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(96,109,9,0.5);
+    opacity: 0;
+    transition: all 1s;
+    transition-timing-function: cubic-bezier(.99, .05, .97, .39);
+}
+.bbbox:hover {
+   opacity: 1;    
+}
+
+.bbbbox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 1;
+    margin-top: 100%;
+    transition: all 1s;
+    font-size: 80px;
+    color: aliceblue;
+    text-align: center
+    
+}
+.box-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.box-wrap:hover .bbbbox {
+     margin-top: 50%;
+}
+
+/*11강 페이지*/
+.hw_page_container {
+    background-color: aqua;
+/*    background-image: linear-gradient(to bottom, #499add, #4e61c0);*/
+    width: 100%;
+    height: 388px;
+    padding: 20px 20px 0px 20px;
+}
+.hw_page_top {
+    float: left;
+    width: 60%;
+    color: peru
+ }
+.hw_page_img {
+    float: left;
+    width: 40%;
+    margin-top: 50px;
+}
+
+.hw_img2 {
+    width:300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.hw_page_button {
+    padding: 15px;
+    font-size: 20px;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+@media screen and (max-width : 992px) {
+    .hw_page_top {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .hw_page_img {
+        float: none;
+        width: 100%;
+        
+    }
+}
+
+.hw_page_mid {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    padding: 20px;
+}
+
+.hw_page_mid2 {
+    background-color: aqua;
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+}
+
+.hw_page_text {
+    color: crimson;
+    text-align: center;
+    
+}
+
+.hw_page_item {
+    text-align: center;
+    width: 25%;
+    padding: 10px;
+    color: coral;
+    
+}
+
+.hw-page_itemall {
+    display: flex;
+}
+
+.tc_main-background {
+    background-image: linear-gradient(to bottom, #499add, #4e61c0);
+    height: 550px;
+    padding: 20px;
+    color: white;
+}
+
+.tc_main-container1 {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.tc_main-text {
+    float: left;
+    margin-top: 50px;
+}
+
+.tc_main-iphone {
+    float: right;
+    width: 400px;
+    margin-top: 95px;
+}
+@media screen and (max-width : 992px) {
+    .tc_main-iphone {
+         width: 260px;
+        float: none;
+        display: block;
+        margin: auto;
+        margin-top: 42px;
+    }
+    .tc_main-text {
+        float: none;
+        text-align: center;
+    }
+  }
+.tc_btn {
+     padding: 15px 20px;
+  font-size: 16px;
+  font-family: 'nanumsquare';
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.tc_btn-black {
+     background: #444;
+  color: white;
+}
+
+.tc_service {
+    background-color: #4e61c0;
+    color: white;
+    text-align: center;
+    padding: 60px 30px 50px 30px;
+}
+
+.tc_service-items {
+    display: flex;
+}
+.tc_service-items i {
+    background-color: white;
+    color: #4e61c0;
+  width: 100px;
+  height: 100px;
+    border-radius: 50%;
+     padding: 15px;
+      box-sizing: border-box;
+}
+.tc_service-items h5 {
+    margin-bottom: 0px;
+}
+.tc_service-items div{
+    width: 25%;
+    margin: 20px;
+}
+@media screen and (max-width : 992px) {
+    .tc_service-items{
+        display: flex;
+        flex-direction: column;
+    }
+    .tc_service-items div{
+    width: 100%;
+}
+  }
+.tc1_portfolio {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+
+.tc1_portfolio-container {
+    text-align: left;
+ max-width: 1200px;
+    margin: auto;
+}
+
+.tc1_portfolio-item1 {    
+    float: left;
+    background-image: url(../image/portfolio-2.jpg);
+    width: 50%;
+    height: 350px;
+    background-size: cover;
+    position: relative;  
+}
+
+.tc1_portfolio-text {
+    color: white;
+    padding: 50px;
+    width: 100%;
+}
+
+.tc1_white-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border : 0px solid white;
+  transition: border 1s;
+}
+.tc1_white-box:hover {
+    border : 30px solid white;
+}
+
+@media screen and (max-width : 992px) {
+    .tc1_portfolio-item1{
+        float: none;
+       width: 100%;
+    }
+    }
+.footer {
+  display: flex;
+  justify-content: center;
+  max-width: 350px;
+}
+
+.footer-icon {
+  color: white;
+  background: #4e61c0;
+  border-radius: 100px;
+  padding: 23px;
+}
+
+.row-3 {
+  width: 33%;
+  text-align: center;
+}
+.tc-pseudo::before {
+    content: 'dfsfsfsfd' ;
+    color: red;
+    font-size: 30px;
+}
+.tc-pseudo::after {
+    content: 'dfsfsfsfd' ;
+    color: red;
+    font-size: 30px;
+}
+.tc-pseudo::first-line {
+    content: 'dfsfsfsfd' ;
+    color: blue;
+    font-size: 30px;
+}
+.tc-pseudo::first-letter {
+    content: 'dfsfsfsfd' ;
+    color: yellow;
+    font-size: 30px;
+}
